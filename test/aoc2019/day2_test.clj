@@ -2,12 +2,6 @@
   (:require [aoc2019.day2 :as sut]
             [clojure.test :refer [deftest testing is]]))
 
-(deftest get-action
-  (testing "when using a known value"
-    (is (= + (:action (sut/get-action 1))))
-    (is (= * (:action (sut/get-action 2))))
-    (is (= "stop" ((:action (sut/get-action 99)))))))
-
 ;; to make sure I don't break these as part of my updates for Day 5:
 (deftest p2019-02-part1
   (testing "Provided answer still matches"
